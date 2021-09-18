@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ベネチアに存在する随一のホテルダニエリ。美しい内装とともに
+  最高のひと時を過ごすならここ！">
+  <meta name="keywords" content="">
+  <link rel="stylesheet" href="style.css">
+  <title>danieli</title>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      var setImg = '#photo';
+      var fadeSpeed = 1600;
+      var switchDelay = 5000;
+
+      $(setImg).children('img').css({ opacity: '0' });
+      $(setImg + ' img:first').stop().animate({ opacity: '1', zIndex: '20' }, fadeSpeed);
+
+      setInterval(function () {
+        $(setImg + ' :first-child').animate({ opacity: '0' }, fadeSpeed).next('img').animate({ opacity: '1' }, fadeSpeed).end().appendTo(setImg);
+      }, switchDelay);
+    });
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="header-logo">
+      <img src="img/hotel-danieli13.png" alt="ダニエリロゴ">
+    </div>
+
+    <nav>
+
+      <ul class="header-list">
+        <li>ホーム</li>
+        <li>客室</li>
+        <li>ダイニング</li>
+        <li>施設</li>
+        <li>ホテル周辺</li>
+        <li>アクセス</li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <main>
+    <div class="picture-1">
+      <img src="img/hotel-danieli14.jpg" alt="ダニエリ外観">
+    </div>
+
+    <div class="content1">
+      <h1>ホテルダニエリ</h1>
+      <div class="text-1">
+        サンマルコ広場の東側近く、ドゥカーレ宮殿から<br>
+        約100mのところに位置するデラックスホテル。<br>
+        14世紀からの歴史をもつ三棟の建物からなり<br>
+        一番歴史のあるパラッツオ・ダンドロにある客室は<br>
+        その半数以上が豪華なべネチアンスタイル。
+      </div>
+
+    </div>
+
+    <div id="photo">
+      <img src="img/hotel-danieli17.jpg" alt="ダニエリ建物">
+      <img src="img/hotel-danieli3.jpg" alt="水上タクシー">
+      <img src="img/hotel-danieli6.jpg" alt="ダニエリ内装1">
+      <img src="img/hotel-danieli16.jpg" alt="ダニエリ内装2">
+    </div>
+
+    <section>
+      <div class="content2">
+        <div class="picture2">
+          <img src="img/hotel-danieli8.jpg" alt="客室">
+        </div>
+        <div class="text-2">
+          <h2>客室</h2>
+          ホテル ダニエリ ヴェネチアの客室には<br>
+          薄型テレビ、冷暖房完備、およびミニバーを<br>
+          ご用意しております。<br>
+          ゲスト用の無料wi-fiをご利用になれます。
+        </div>
+      </div>
+
+      <div class="content3">
+        <div class="picture3">
+          <img src="img/hotel-danieli7.jpg" alt="朝食">
+        </div>
+        <div class="text-3">
+          <h2>ダイニング</h2>
+          アドリア海を見ながらのテラスで<br>
+          食べる朝食は世界一の朝食との<br>呼び声高いものとなって
+          おります。
+        </div>
+      </div>
+
+      <div class="content4">
+        <duv class="picture4">
+          <img src="img/hotel-danieli19.jpg" alt="フィットネス">
+        </duv>
+        <div class="text-4">
+          <h2>施設</h2>
+          ホテル内には24時間の<br>
+          フィットネスセンター、<br>
+          スパにコンシェルジェデスクもあります。
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3>ホテル周辺</h3>
+      <div class="content5">
+        <p>ホテルダニエリから徒歩圏内でドゥカーレ宮殿 (0.2 km)、サン・マルコ大聖堂 (0.2 km)、およびサン マルコの鐘楼 (0.2 km)等が
+          あります。</p>
+        <div class="content6">
+          <div class="picture5">
+            <img src="img/Ducale Palace.jpg" alt="ドュカーレ宮殿">
+          </div>
+          <div class="picture6">
+            <img src="img/sanmarcocathedral.jpg" alt="サンマルコ大聖堂">
+          </div>
+          <div class="picture7">
+            <img src="img/sanmarcotower.jpg" alt="サンマルコの鐘楼">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="content7">
+        <h3>アクセス</h3>
+        <p>
+          ヴェニスマルコポーロ空港からタクシーで約50分です。<br>
+          他に空港から24時間いつでもご利用できる、所要時間約40分の水上タクシーもあります。
+        </p>
+      </div>
+  
+  </section>
+</main>
+  <fooder>
+    <nav class="footer-list">
+      <ul>
+        <li>ホテル概要</li>
+        <li>よくあるご質問</li>
+        <li>ご利用方法</li>
+      </ul>
+      <address>
+        <div class="footer-info">
+          <p>お問い合わせ先はこちら</p>
+          <p>12345@xxx.co.jp</p>
+        </div>
+      </address>
+    </nav>
+  </fooder>
+</body>
+
+</html>
